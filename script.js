@@ -26,3 +26,11 @@ let changeWidth = main.style.width = gridwidth(gridNumber) +"px"
 
 createGrid(gridNumber)
 main.innerHTML = gridBox
+
+function changeBlack() {
+      this.style.backgroundColor = 'black';
+  }
+let test = document.getElementsByClassName('grid-item')
+// Array.from(test).forEach(changeBlack)
+Array.from(test).forEach(function(x){x.addEventListener("mouseenter", changeBlack)})
+// it works if changebackground is this
