@@ -34,3 +34,11 @@ let test = document.getElementsByClassName('grid-item')
 // Array.from(test).forEach(changeBlack)
 Array.from(test).forEach(function(x){x.addEventListener("mouseenter", changeBlack)})
 // it works if changebackground is this
+
+function clearBox(item) {
+    item.style.backgroundColor = '';
+}
+
+function buttonClear() {
+  Array.from(test).forEach(clearBox);
+}
